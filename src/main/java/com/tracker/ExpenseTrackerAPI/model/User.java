@@ -21,5 +21,5 @@ public class User {
     @Column(unique = true)
     private String userEmail;
     @NotBlank
-    private String password;
+    private String userPassword;
 }
