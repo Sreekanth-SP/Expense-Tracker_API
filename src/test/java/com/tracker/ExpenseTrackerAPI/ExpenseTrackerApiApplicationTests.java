@@ -9,5 +9,4 @@ class ExpenseTrackerApiApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
