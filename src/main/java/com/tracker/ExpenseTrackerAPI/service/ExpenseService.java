@@ -52,7 +52,7 @@ public class ExpenseService {
     }
 
     public Double getTotalExpenditureForMonth(Long userId,LocalDate startDate, LocalDate endDate ) {
-        List<Expense> expenses = expenseRepo.findByExpenseByUserIdAndStartDateAfterAndEndDateBefore(userId, startDate, endDate);
+        List<Expense> expenses = expenseRepo.findByUser_UserIdAndDateBetween(userId,startDate,endDate);
 
         double totalAmount = 0.0;
         for (Expense expense : expenses) {
